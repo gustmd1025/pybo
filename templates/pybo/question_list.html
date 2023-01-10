@@ -43,7 +43,7 @@
                 <span class="badge badge-warning px-2 py-1" style="background-color : gray !important">{{ question.voter.all.count }}</span>
                 {% endif %}
             </td>
-            <td class="text-left">
+            <td class="text-center">
                 <a href="{% url 'pybo:detail' question.id %}">{{ question.subject }}</a>
                 {% if question.answer_set.count > 0 %}
                 <span class="text-danger small ml-2" style="color : gray !important">{{ question.answer_set.count }}</span>
