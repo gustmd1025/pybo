@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
 {% load pybo_filter %}
 {% block content %}
-<div class="container my-3">
+<div class="container my-3" style="background-color : #b1c6db ; border : 1px solid red ;
+  box-shadow: 20px 10px 5px #666666; !important" >
     <!-- 사용자오류 표시 -->
     {% if messages %}
-    <div class="alert alert-danger my-3" role="alert">
+    <div class="alert alert-danger my-3" role="alert" style="font-family : fantasy !important">
     {% for message in messages %}
         <strong>{{ message.tags }}</strong>
         <ul><li>{{ message.message }}</li></ul>
@@ -93,7 +94,7 @@
                             <div>{{ answer.modify_date }}</div>
                         </div>
                         {% endif %}
-                        <div class="badge badge-light p-2 text-left">
+                        <div class="badge badge-light p-2 text-left" >
                             <div class="mb-2">{{ answer.author.username }}</div>
                             <div>{{ answer.create_date }}</div>
                         </div>
