@@ -4,7 +4,7 @@
 
 <div class="container my-3">
     <div class="row justify-content-between my-3">
-        <div class="col-2" >
+        <div class="col-2" style="font-family : serif !important">
             <select class="form-control so" style="background-color:black ; color : gray !important">
                 <option value="recent" {% if so == 'recent' %}selected{% endif %}>최신순</option>
                 <option value="recommend" {% if so == 'recommend' %}selected{% endif %}>추천순</option>
@@ -22,7 +22,7 @@
     </div>
     <table class="table">
         <thead>
-        <tr class="text-center" style="background-color : #2e2b2b; color : white !important">
+        <tr class="text-center" style="background-color : #2e2b2b; color : white;font-family : serif !important">
             <th>번호</th>
             <th>추천</th>
             <th style="width:50%">제목</th>
